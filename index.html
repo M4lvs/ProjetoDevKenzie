@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Projeto Dev - Aula 1</title>
+    </head>
+
+    <body>
+      <header>
+
+        <h1>Malvs (Uma Jornada Pelo HTML)</h1>
+        <h2>Dev Front-End (Desenvolvimento de Linha de Frente)</h2>
+        <h3>Essa página se refere a primeira aula do Projeto Dev de cinco dias da Kenzie Academy</h3>
+        <br/>
+        <img src="malvs.png" alt="Logo" width="auto">
+      </header>
+
+        <br/>
+        (essa área de títulos e subtitulos foram feitas usando as tags "h1" "h2" e "h3", respectivamente para cada uma das linhas acima, ela está dentro da tag "header", que indica ao navegador o cabeçalho do meu site, usamos a tag "img" para ancorar a imagem, nessa tag usamos o atributo "href" para colocar o link da imagem e o atributo "alt" para inserir uma descrição dela, util para deficientes visuais e auditivos), além disso usamos a propriedade do CSS "backgroundcolor" para mudar o fundo para um tom mais claro que o do site.
+
+      <figure>
+          <img src="logo-kenzie.png" alt="logo-kenzie" height="100px" width="auto">
+          <figcaption>Essa é a logomarca da Kenzie Academy, esta legenda foi feita pela tag "figcaption", que permite dar legenda para uma imagem dentro da tag "figure", explicada logo abaixo.</figcaption>
+          <br/>
+          Essa logo está afetada pela tag "figure", que indica ao navegador que esta é uma imagem com importância para o site (é uma tag semântica).
+      </figure>
+
+        <main>
+        
+        <p>O HTML é uma linguagem de marcação, serve para indicar para o navegador como a estrutura do meu site deve ser lida.</p>
+        <br/>
+        O texto acima foi feito utilizando a tag "p", ela serve para criarmos um parágrafo em nosso site, todos os parágrafos deste site estão com estilo de fundo azul escuro e borda arredondada azul claro (backgroundcolor, border e borderradius).
+        <br/>
+        <br/>
+        <article class="teste corazul"><p>Esse parágrafo está sendo afetado pela tag "article", uma tag semântica para mostrar um trecho de importância no conteúdo, além disso ela está sendo afetada pelo efeito CSS de classe com tamanho de fonte de 30px</p></article>
+        <!--Lista Não-Ordenada-->
+        <ul>
+            <!--li=List Item (item de lista)-->
+            <li>Cuidar com as armadilhas</li>
+            <li>É trabalhoso e precisa de determinação</li>
+            <li>É um mercado de trabalho amplo</li>
+            <li>Pode lhe fornecer salários altos</li>
+            <li><em>Este item da lista está em itálico pela tag "em", além desse feito, ela guia o navegador a dar destaque para este item, isso é chamado de semântica</em></li>
+            <li><strong>Este item está em negrito pela tag "strong", também dá destaque ao item</strong></li>
+            <li><span>Este item está afetado pela tag "span", serve para dar menos destaque a uma palavra ou de certa forma diferencia-la do resto do conteúdo através de atributos inseridos nela</span></li>
+            <li id="lastitem">Este item da lista está com um estilo identificado pelo CSS com uma ID, o tamanho da fonte está levemente maior que os outros itens da lista</li>
+
+        </ul>
+        <br/>
+        A lista não-ordenada acima foi feita utilizando a tag "ul" para determina-la como esse tipo de lista e a tag "li" para definir cada item desta lista. As listas deste site (a tag "li") estão afetadas pelo estilo através da tag, teve o tamanho da fonte diferente do padrão do site.
+
+        <ol>
+            <li>Começamos definindo que é um arquivo HTML</li>
+            <li>Depois configuramos a página pela tag HEAD</li>
+            <li>Após isso definimos o corpo do site dentro do conteúdo da tag BODY</li>
+        </ol>
+        <br/>
+        A lista ordenada acima foi feita utilizando a tag "ol" para determina-la como esse tipo de lista e a tag "li" para definir cada item desta lista.
+        <br/>
+        <br/>
+            <section class="teste secao1">Esta linha está sendo afetada pela tag "section", ela funciona como a DIV, mas é uma tag semântica, isso define esta linha como importante para o navegador, além disso, está sendo afetada pelos estilos de texto (fontsize,fontweight,fontfamily,textalign,color)</section>
+        <br/>
+            <div>
+                    <a href="ancora.html">Esse é um exemplo da tag de ancoragem "a", clique nela para ver seu efeito</a>
+                    <br/>
+                    Esta área de âncora está sendo afetada pela tag "div", ela serve para separar um conteúdo e fazermos alterações específicas nele (geralmente visuais), também está afetada pelo estilo através de atributo, o atributo href agora tem fundo azul escuro.
+
+                </div>   
+        </main>
+        <br/>
+        O conteúdo do parágrafo até a área de âncora está sendo afetado pela tag "main", que também é uma tag semântica, que define todo este conteúdo como o príncipal do site para o navegador
+        <br/>
+        <br/>
+            <aside>
+                Temos a tag "aside" também, que é para indicar um conteúdo menos relacionado ao principal, como uma área de anúncios e etc
+            </aside>
+        <br/>
+        <br/>
+        <hr>
+        Abaixo temos uma exemplificação de como funcionam tags em linha e em bloco, note que as tags em linha ocupam apenas o espaço de seu conteúdo, já as tags em bloco ocupam o espaço lateral disponível, além da quebra de linha.
+        <h2>Elementos em Linha</h2>
+            <a href="">Tag "a" é linha-</a><a href="">Tag "a" é linha-</a><a href="">Tag "a" é linha-</a><a id="ancorabloco" href="">Tag "a" é linha, porém essa âncora foi modificada para bloco pelo estilo "display=block." </a>
+        <h2>Elementos em Bloco</h2>
+            <p>tag "p" é bloco</p>
+            <div>tag "div" é bloco</div>
+            <section>tag "section é bloco</section>
+            <h2>tags "h1,h2..." são blocos</h2>
+            <article>tag "article" é bloco</article>
+        Podemos mudar os blocos para linha usando o estilo "display: inline;"
+        <hr>
+        <footer>Criado e Desenvolvido por Malvs, este é o rodapé da página, usando a tag "footer" </footer>
+
+    </body>
+</html>

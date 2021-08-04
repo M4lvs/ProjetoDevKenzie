@@ -1,0 +1,93 @@
+/*Cascading Style Sheets (Folha de Estilos em Cascata, em portugês)*/
+/* Ordem na estrutura CSS: 1º - Seletor (id, class, elemento), 2º - Propriedade (cor, tamanho...), 3º Valor da Propriedade (px, hexadecimal...), 4º Declaração (é o conjunto das outras 3 instruções, o resultado)*/
+/*
+-Seletor:
+    - Pela Tag (elemento)
+    - Pelo Id "#" (identidade)
+    - Pela Class "."(classe/agrupamento)
+    - Pelo Atributo (href, src, id, class...)
+*/
+
+/* Exemplo de estilo para tag*/
+body{
+    margin: 0;
+    background-color: #141129;
+}
+header{
+    background-color:#2a2452;
+}
+ul{
+    font-size: 15px;
+}
+html{
+    color: white;
+}
+a{
+    color: white;
+}
+/* Exemplo de estilo para Id*/
+#lastitem{
+    font-size: 20px;
+}
+/* Exemplo de estilo para classe*/
+.teste{
+    font-size: 30px;
+}
+
+.teste.corazul{
+    color: white;
+
+}
+/* Exemplo de estilo para atributo*/
+img[src]{
+    height: 100px;
+}
+a[href]{
+    background-color: #3a3273;
+}
+
+
+/* Unidades de Medida*/
+/* 
+Absolutas:
+    -px
+Relativas:
+    -rem (relativa ao elemento raíz, no caso do HTML, seria a própria tag HTML) >ex: se html tem 16px, 1rem=16px
+    -% (relativa ao "pai", ou seja, a porcentagem relativa ao elemento que está hierarquicamente logo acima do que está sendo alterado)
+    -vh (viewport height, ou seja, relativa a altura do navegador/tela)
+    -vw (viewport Widght, ou seja, relativa a largura do navegador/tela)
+*/
+
+
+/* Exemplos de Propriedades para o CSS*/
+
+/* FONTES */
+.teste.secao1{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif ;
+    text-align: center;
+    color: white;
+    background-color: #383075;
+}
+
+/* DIMENSIONAMENTO */
+p{
+    background-color: #221e45;
+    border:solid 3px #5b4ebf;
+    border-radius: 3px;
+    width: 300px;
+    padding: 2px 10px 2px 10px;
+    margin:0px;
+}
+
+/* POSICIONAMENTO 
+    -display: inline;      -> Não podemos aplicar largura e altura
+    -display: block;       -> Podemos aplicar largura e altura
+    -display: inline-block -> É flexível quanto as regras acima.
+
+
+*/
+#ancorabloco{
+    display: block;
+}
